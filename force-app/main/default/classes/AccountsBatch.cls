@@ -1,3 +1,4 @@
+//updating all description with batch
 public class AccountsBatch implements Database.Batchable<sObject> {
     
     public Database.QueryLocator start(Database.BatchableContext bc ){
@@ -6,6 +7,7 @@ public class AccountsBatch implements Database.Batchable<sObject> {
         return q1;
 
     }
+    //Execute method.
 
     public void execute(Database.BatchableContext bc, List<Account> accList){
         
